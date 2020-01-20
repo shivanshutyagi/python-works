@@ -11,4 +11,4 @@ def p_fib(n):
     print(i)
 
 
-p_fib(int(input('Enter value of n: ')))
+p_fib(int(input('Enter value of n : ')))
