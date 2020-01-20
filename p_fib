@@ -1,0 +1,14 @@
+def p_fib(n):
+    """
+    Prints fibonacci series till n
+    :param n:
+    """
+    i = 0
+    j = 1
+    while j <= n:
+        print(i)
+        i, j = (j, i+j)
+    print(i)
+
+
+p_fib(int(input('Enter value of n: ')))
