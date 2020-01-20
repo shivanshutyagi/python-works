@@ -1,0 +1,18 @@
+import math
+
+
+def print_pi(limit):
+    """
+    This function returns the value of pi with limit as precision.
+    :param limit:
+    :return: value of pi up to limit places of decimal
+    """
+    while limit > 15:
+        if limit > 15:
+            print('Limit exceeded!!!!')
+            limit = int(input('Re-enter value : '))
+    result = round(math.pi, limit)
+    return result
+
+
+print(print_pi(int(input('Enter the limit of precision: '))))
