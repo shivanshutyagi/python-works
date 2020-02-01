@@ -1,0 +1,24 @@
+def decimal_to_binary(data):
+    """
+    Converts decimal to binary
+    :param data: Decimal number as text
+    :return: Binary equivalent of data as String
+    """
+    result = ''
+    while data > 1:
+        result += str(data % 2)
+        data = int(data / 2)
+    result += str(1)
+    return result[-1::-1]
+
+
+def binary_to_decimal(data):
+    """
+    Converts binary to decimal
+    :param data: Binary number as a string
+    :return: Decimal equivalent of data
+    """
+    result = 0
+    for i in range(len(data)-1, 0, -1):
+        result += pow(2, i) * int(data[len(data)-1-i])
+    return result
